@@ -1,0 +1,12 @@
+spring:
+  profiles: default
+  cache:
+    caffeine:
+      spec: maximumSize=500, expireAfterAccess=36000s  
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test2           
+  env:
+    name: local
